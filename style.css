@@ -540,3 +540,22 @@ body {
     pointer-events: none;
     z-index: -1;
 }
+
+/* MOBILE VERSION */
+@media screen and (max-width: 768px) {
+
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 10vw, 4rem);
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
