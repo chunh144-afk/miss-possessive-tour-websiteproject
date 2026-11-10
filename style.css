@@ -541,21 +541,68 @@ body {
     z-index: -1;
 }
 
-/* MOBILE VERSION */
+
+/* MOBILE RESPONSIVE DESIGN */
 @media screen and (max-width: 768px) {
 
-  body {
-    width: 100%;
-    overflow-x: hidden;
-  }
-
-  h1 {
-    font-size: clamp(2rem, 10vw, 4rem);
-  }
-
-  img {
-    max-width: 100%;
+  .poster {
+    min-height: 100vh;
     height: auto;
+    padding: 30px 20px 100px;
+    overflow: hidden;
+  }
+
+  .artist {
+    position: relative;
+    top: auto;
+    left: auto;
+    font-size: 18px;
+    letter-spacing: 4px;
+    margin-bottom: 45px;
+  }
+
+  .poster-content {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    z-index: 5;
+  }
+
+  .title {
+    font-size: clamp(42px, 11vw, 70px);
+    letter-spacing: -2px;
+    line-height: 0.95;
+    max-width: 100%;
+  }
+
+  .subtitle {
+    font-size: 15px;
+    letter-spacing: 5px;
+    margin-top: 25px;
+  }
+
+  .cities {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 45px;
+    gap: 12px;
+  }
+
+  .cities a {
+    width: 100%;
+    padding: 15px 18px;
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+
+  .photo-container {
+    top: 20%;
+    right: 5%;
+    width: 45%;
+    height: 40%;
+    opacity: 0.5;
+    z-index: 1;
   }
 
 }
